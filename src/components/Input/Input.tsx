@@ -1,11 +1,11 @@
 
-import './styles.css';
+import './styles06.css';
 
-function Input() {
-  return <input className="Homework-input"
+function nameInput() {
+  return <input id ="name"
   type="name"
   placeholder="Enter your name..."
   >Name</input>
 }
 
-export default Input
+export default nameInput
