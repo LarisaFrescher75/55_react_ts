@@ -1,0 +1,11 @@
+.input-component {
+
+    width: 30 px;
+    height: 50px;
+    padding: 12px;
+    outline: none;
+    border: 1px solid black;
+    font-size: 18px;
+
+}
+

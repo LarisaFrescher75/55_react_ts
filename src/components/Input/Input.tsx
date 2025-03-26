@@ -1,11 +1,12 @@
 
 import './styles.css';
 
+
 function Input() {
-  return <input className="Homework-input"
-  type="name"
+  return < input className='input-component'name ='test' 
+  
   placeholder="Enter your name..."
-  >Name</input>
+  />
 }
 
-export default Input
+export default Input;
