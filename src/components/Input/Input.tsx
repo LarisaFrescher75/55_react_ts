@@ -9,6 +9,17 @@
 import './styles.css';
 import { InputProps } from './types.ts';
 
+<<<<<<< HEAD
+
+function Input() {
+  return < input className='input-component'name ='test' 
+  
+  placeholder="Enter your name..."
+  />
+}
+
+export default Input;
+=======
 function Input({
   placeholder,
   name,
@@ -35,3 +46,4 @@ function Input({
 }
 
 export default Input;
+>>>>>>> 412637179a9dc7ed1268e6510e1ed495ec66758b
