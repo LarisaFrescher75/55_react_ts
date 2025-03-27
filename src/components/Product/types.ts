@@ -1,7 +1,7 @@
 
 
 export interface ProductProps {
-    name: string,
-    price: number,
+    productName: string,
+    productPrice: number,
     
   }

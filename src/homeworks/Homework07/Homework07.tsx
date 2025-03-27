@@ -1,31 +1,26 @@
 
 
 
-
 import { v4 } from "uuid";
+import ProductCard from "../../components/Product/Product";
+import { products } from "./data";
+import './styles.css';
 
-import Product from "../../components/Product/Product";
-import { productsData } from "./data";
-import './styles07.css';
 
 function Homework07() {
-  const products = productsData.map((products) => {
-    return <Product
-      key={v4()}
-      name={products.name}
-      price={products.price}
-       />
+  const productsList = products.map((productObj) => {
+    return (
+      <ProductCard
+        key={v4()}
+        productName={productObj.name}
+        productPrice={productObj.price} />
+    )
   })
-
-  console.log(products);
-
-
   return (
-    <div className='products-wrapper'>
-      {products}
+    <div className="homework07-container">
+      <h1>Products</h1>
+      {productsList}
     </div>
   )
-  // <AnimalCard name={animalData[0].name} species="Lion" img='' />
 }
-
-export default Homework07
+export default Homework07;

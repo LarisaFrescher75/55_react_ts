@@ -1,16 +1,12 @@
 
-
-import './styles.css';
 import { ProductProps } from "./types";
-
-function Product({ name, price }: ProductProps) {
+import './styles.css'
+function Product({ productName, productPrice }: ProductProps) {
   return (
-    <div className="products-container">
-      <h2>{name}</h2>
-      <div>{price}</div>
-      
+    <div className="product-container">
+      <div>Product: {productName}</div>
+      <div>Price: {productPrice}</div>
     </div>
   )
 }
-
 export default Product;

@@ -3,6 +3,8 @@
 // import Task6 from './lessons/Lesson06/Lesson06';
 //import Homework06 from './homeworks/Homework06/Homework06';
 
+import Homework07 from "./homeworks/Homework07/Homework07"
+
 //Lessons imports
 // импорт компонента Lesson06 по умолчанию
 // при импорте по умолчанию можно использовать другое названия для компонента
@@ -12,7 +14,7 @@
 //Homeworks imports
 // import Homework06 from "./homeworks/Homework06/Homework06"
 
-import Homework07 from "./lessons/Hoework07/Homework07"
+
 
 function App() {
 
@@ -22,7 +24,7 @@ function App() {
       {/* <Lesson06 /> */}
       {/* <Homework06 /> */}
       {/*<Lesson07 />*/}
-      {<Homework07 />}
+      <Homework07 />
     </>
   )
 }
