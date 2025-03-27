@@ -1,0 +1,16 @@
+.product-container {
+  /* свойства для flexbox */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30 px;
+  /* обычные свойства */
+  min-width: 400px;
+  min-height: 400px;
+  padding: 20px;
+  background-color: rgb(40, 162, 249);
+  border: 2px solid rgb(234, 219, 11);
+  border-radius: 10px;
+  font-size: 24px;
+}
