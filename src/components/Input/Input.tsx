@@ -1,20 +1,6 @@
 
-AIT logo
-Student cabinet
-Scheduler
-React:_Controlled_and_uncontrolled_components
-Cohort 55.1m-fs
-Front_end
-Lesson Nr: 07
-Lecture
-Wed, 26.03.2025
-Ekaterina Zavertyaeva
-
-
-
-
-
-
+Search file or directory
+lesson/Input/Input.tsx
 import './styles.css';
 import { InputProps } from './types';
 
