@@ -1,25 +1,9 @@
 
 
 
+import { InputContainer, Label, InputComponent } from './styles';
+import { InputProps } from './types';
 
-
-
-
-
-import './styles.css';
-import { InputProps } from './types.ts';
-
-<<<<<<< HEAD
-
-function Input() {
-  return < input className='input-component'name ='test' 
-  
-  placeholder="Enter your name..."
-  />
-}
-
-export default Input;
-=======
 function Input({
   placeholder,
   name,
@@ -27,23 +11,27 @@ function Input({
   type = 'text',
   onChange,
   label,
-  id
+  id,
+  search
 }: InputProps) {
   return (
-    <div className='input-container'>
-      <label htmlFor={id}>{label}</label>
-      <input
-        className='input-component'
+    <InputContainer>
+      <Label htmlFor={id}>{label}</Label>
+      <InputComponent
         name={name}
         placeholder={placeholder}
         value={value}
         onChange={onChange}
         type={type}
         id={id}
+        isSearch = {search}
       />
-    </div>
+    </InputContainer>
   )
 }
 
 export default Input;
->>>>>>> 412637179a9dc7ed1268e6510e1ed495ec66758b
+
+
+
+
