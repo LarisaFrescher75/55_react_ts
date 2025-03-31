@@ -3,7 +3,7 @@
 // import Task6 from './lessons/Lesson06/Lesson06';
 //import Homework06 from './homeworks/Homework06/Homework06';
 
-import Homework07 from "./homeworks/Homework07/Homework07"
+//import Homework07 from "./homeworks/Homework07/Homework07"
 
 //Lessons imports
 // импорт компонента Lesson06 по умолчанию
