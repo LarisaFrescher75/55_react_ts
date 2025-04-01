@@ -1,7 +1,6 @@
 
 
 export interface ProductProps {
-    productName: string,
-    productPrice: number,
-    
-  }
+  productName: string,
+  productPrice: number
+}
