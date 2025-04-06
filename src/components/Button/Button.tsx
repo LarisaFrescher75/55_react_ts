@@ -1,6 +1,3 @@
-
-
-
 import { MainButton } from './styles';
 import { ButtonProps } from './types';
 
@@ -19,6 +16,8 @@ function Button({ name, onClick, disabled = false, type = 'submit', danger }: Bu
       disabled={disabled}
       type={type}
       danger={danger}
+      
+      
     >
       {name}
     </MainButton>

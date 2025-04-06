@@ -1,8 +1,9 @@
 
 
-
-import { InputContainer, Label, InputComponent } from './styles';
+import { InputContainer, Label, InputComponent, ErrorMessage } from './styles';
 import { InputProps } from './types';
+
+
 
 function Input({
   placeholder,
@@ -12,7 +13,8 @@ function Input({
   onChange,
   label,
   id,
-  search
+  search,
+  error
 }: InputProps) {
   return (
     <InputContainer>
@@ -26,6 +28,9 @@ function Input({
         id={id}
         isSearch = {search}
       />
+      <ErrorMessage>{error}</ErrorMessage>
+
+      <ErrorMessage></ErrorMessage>
     </InputContainer>
   )
 }
