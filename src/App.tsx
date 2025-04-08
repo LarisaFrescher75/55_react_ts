@@ -1,8 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+import Course from './pages/Course/Course'
 import Layout from "./components/Layout/Layout"
 import About from "./pages/About/About"
-import Home from "./pages/Home/Home"
+import Home from './pages/Home'
 import GlobalStyles from "./styles/GlobalStyles"
 
 //Lessons imports
@@ -51,6 +52,7 @@ function App() {
           который должен быть вызван, если выполнен переход по этому маршруту */}
           <Route path='/' element={<Home />}/>
           <Route path='/about' element={<About />}/>
+          <Route path='/course' element={<Course />}/>
         </Routes>
       </Layout>
     </BrowserRouter>
