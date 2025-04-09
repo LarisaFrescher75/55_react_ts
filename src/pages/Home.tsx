@@ -1,5 +1,4 @@
 
-
 import { HomeWrapper, Title } from "./styles";
 
 function Home() {

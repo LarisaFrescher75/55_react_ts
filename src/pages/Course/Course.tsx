@@ -1,14 +1,19 @@
+import { v4 } from "uuid"
 
+import { CourseWrapper, Title, ListItem } from "./styles"
+import { lessonsData } from "./data"
 
-import { CourseWrapper, Title } from "./styles";
+function Course (){
+const lessons = lessonsData.map((lesson: string)=>{
+  return <ListItem key={v4()}>{lesson}</ListItem>
+})
 
-function Course() {
   return (
     <CourseWrapper>
-      <Title>React Lessons
-      </Title>
+      <Title>React Lessons</Title>
+      {lessons}
     </CourseWrapper>
   )
 }
 
-export default Course;
+export default Course
