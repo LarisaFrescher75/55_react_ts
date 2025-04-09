@@ -1,5 +1,5 @@
 
-import { NavLink } from "react-router-dom"
+
 
 import {
   LayoutComponent,
@@ -19,8 +19,10 @@ function Layout({children} : LayoutProps) {
         <Nav>
           {/* NavLink - компонент библиотеки, который добавляет ссылку на 
           страницу по маршруту через prop to */}
-          <NavLink to='/'>Home</NavLink>
-          <NavLink to='/about'>About</NavLink>
+         <StyledNavLink to='/'>Home</StyledNavLink>
+          <StyledNavLink to='/about'>About</StyledNavLink>
+          <StyledNavLink to='/course'>Course</StyledNavLink>
+
         </Nav>
       </Header>
       <Main>{children}</Main>

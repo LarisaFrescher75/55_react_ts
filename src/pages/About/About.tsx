@@ -1,5 +1,4 @@
 
-
 import { AboutWrapper, Title } from "./styles";
 
 function About() {
