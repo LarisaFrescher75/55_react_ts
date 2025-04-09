@@ -1,10 +1,21 @@
+
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import Course from './pages/Course/Course'
+
 import Layout from "./components/Layout/Layout"
 import About from "./pages/About/About"
 import Home from './pages/Home'
+import Course from './pages/Course/Course'
+import Users from './pages/Users/Users'
 import GlobalStyles from "./styles/GlobalStyles"
+import Designer from './pages/Users/components/Designer/Designer'
+import Manager from './pages/Users/components/Manager/Manager'
+import PageNotFound from './pages/PageNotFound/PageNotFound'
+import Atos from './pages/Clients/components/Atos/Atos'
+import Columbus from './pages/Clients/components/Columbus/Columbus'
+import Legrand from './pages/Clients/components/Legrand/Legrand'
+import Clients from './pages/Clients/Clients'
 
 //Lessons imports
 // импорт компонента Lesson06 по умолчанию
@@ -40,8 +51,6 @@ import GlobalStyles from "./styles/GlobalStyles"
 
 function App() {
 
-  
-
   return (
     //BrowserRouter - глобальная обёртка для всего приложения,
     // которая позволяет использовать маршрутизацию
@@ -52,9 +61,20 @@ function App() {
         <Routes>
           {/* Route - компонент библиотеки, в который передаётся маршрут и тот компонент (страницу),
           который должен быть вызван, если выполнен переход по этому маршруту */}
-          <Route path='/' element={<Home />}/>
-          <Route path='/about' element={<About />}/>
-          <Route path='/course' element={<Course />}/>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/course' element={<Course />} />
+          <Route path='/users' element={<Users />} />
+          <Route path='/users/designer' element={<Designer />} />
+          <Route path='/users/manager' element={<Manager />} />
+          <Route path='/clients/atos' element={<Atos />} />
+          <Route path='/clients/legrand' element={<Legrand />} />
+          <Route path='/clients/columbus' element={<Columbus />} />
+          <Route path='/clients' element={<Clients />} />
+          {/* path='*' - специальный маршрут, который вызовет переданный компонент в
+          том случае, если в маршрутах выше не будет найдено того маршрута,
+          к которому обращается пользователь */}
+          <Route path='*' element={<PageNotFound />} />
         </Routes>
       </Layout>
     </BrowserRouter>
