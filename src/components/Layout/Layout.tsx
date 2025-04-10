@@ -2,6 +2,7 @@
 
 import { v4 } from "uuid"
 import { Link, useNavigate } from "react-router-dom"
+import Clients from "../../pages/Clients/Clients"
 
 import {
   LayoutComponent,
@@ -16,7 +17,7 @@ import {
 } from "./styles"
 import { LayoutProps, NavLinkObj } from "./types"
 import { navLinksData } from "./data"
-import "../../assets/avatar.jpg" 
+import Logo from "../../assets/avatar.jpg" 
 import Button from "../Button/Button"
 
 function Layout({ children }: LayoutProps) {

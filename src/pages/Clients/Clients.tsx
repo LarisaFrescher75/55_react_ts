@@ -19,14 +19,14 @@ function Clients() {
     }
 
     const goToLegrandPage = ()=>{
-        navigate('/clients/legrand')
-      }
+        navigate('/clients/lerand')
+    }
 
 
   return (
     <ClientsWrapper>
       <Title>Clients pages</Title>
-      <Image src='https://avatars.mds.yandex.net/i?id=4dc24c2d9b39f9b42334498641728077ce05009b-5879431-images-thumbs&n=13' />
+      {/*<Image src='https://avatars.mds.yandex.net/i?id=4dc24c2d9b39f9b42334498641728077ce05009b-5879431-images-thumbs&n=13' />*/}
       
       <StyledLink to='atos'>Atos</StyledLink>
       <StyledLink to='/clients/legrand'>Legrand</StyledLink>

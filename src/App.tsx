@@ -16,6 +16,7 @@ import Atos from './pages/Clients/components/Atos/Atos'
 import Columbus from './pages/Clients/components/Columbus/Columbus'
 import Legrand from './pages/Clients/components/Legrand/Legrand'
 import Clients from './pages/Clients/Clients'
+import Lesson18 from './lessons/Lesson18/Lesson18'
 
 //Lessons imports
 // импорт компонента Lesson06 по умолчанию
@@ -71,6 +72,7 @@ function App() {
           <Route path='/clients/legrand' element={<Legrand />} />
           <Route path='/clients/columbus' element={<Columbus />} />
           <Route path='/clients' element={<Clients />} />
+          <Route path='/lesson18' element={<Lesson18 />} />
           {/* path='*' - специальный маршрут, который вызовет переданный компонент в
           том случае, если в маршрутах выше не будет найдено того маршрута,
           к которому обращается пользователь */}
