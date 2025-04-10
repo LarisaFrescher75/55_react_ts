@@ -11,7 +11,7 @@ function Clients() {
     const navigate = useNavigate();
   
     const goToAtosPage = ()=>{
-      navigate('/atos')
+      navigate('/clients/atos')
     }
   
     const goToColumbusPage = ()=>{
@@ -19,7 +19,7 @@ function Clients() {
     }
 
     const goToLegrandPage = ()=>{
-        navigate('/clients/lerand')
+        navigate('/clients/legrand')
     }
 
 

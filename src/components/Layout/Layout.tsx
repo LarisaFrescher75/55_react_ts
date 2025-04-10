@@ -2,7 +2,7 @@
 
 import { v4 } from "uuid"
 import { Link, useNavigate } from "react-router-dom"
-import Clients from "../../pages/Clients/Clients"
+
 
 import {
   LayoutComponent,
