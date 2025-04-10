@@ -1,7 +1,8 @@
 import Content from "../Content/Content"
 import { SectionTitle, SectionWrapper } from "./styles"
+// import { SectionProps } from "./types"
 
-function Section(data: SectionProps) {
+function Section() {
   return (
     <SectionWrapper>
       <SectionTitle>Section Block</SectionTitle>
@@ -11,3 +12,15 @@ function Section(data: SectionProps) {
 }
 
 export default Section
+
+// Пример с props drilling
+// function Section({data}: SectionProps) {
+//   return (
+//     <SectionWrapper>
+//       <SectionTitle>Section Block</SectionTitle>
+//       <Content userData={data}/>
+//     </SectionWrapper>
+//   )
+// }
+
+// export default Section

@@ -1,3 +1,6 @@
 
+import { UserData } from "../MainCard/types";
 
-export interface Section
+export interface SectionProps {
+  data: UserData
+}

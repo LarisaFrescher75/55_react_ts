@@ -1,7 +1,5 @@
   
-  
 import MainCard from "./components/MainCard/MainCard"
-
 import { Lesson18Wrapper } from "./styles"
 
 function Lesson18() {

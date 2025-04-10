@@ -1,21 +1,18 @@
-
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
 
 import Layout from "./components/Layout/Layout"
 import About from "./pages/About/About"
-import Home from './pages/Home'
+//import Home from "./pages/Home/Home"
 import Course from './pages/Course/Course'
 import Users from './pages/Users/Users'
 import GlobalStyles from "./styles/GlobalStyles"
 import Designer from './pages/Users/components/Designer/Designer'
 import Manager from './pages/Users/components/Manager/Manager'
 import PageNotFound from './pages/PageNotFound/PageNotFound'
-import Atos from './pages/Clients/components/Atos/Atos'
-import Columbus from './pages/Clients/components/Columbus/Columbus'
-import Legrand from './pages/Clients/components/Legrand/Legrand'
 import Clients from './pages/Clients/Clients'
+//import Amazon from './pages/Clients/components/Amazon/Amazon'
+//import Facebook from './pages/Clients/components/Facebook/Facebook'
+//import Google from './pages/Clients/components/Google/Google'
 import Lesson18 from './lessons/Lesson18/Lesson18'
 
 //Lessons imports
@@ -48,6 +45,8 @@ import Lesson18 from './lessons/Lesson18/Lesson18'
 //Consultations imports
 // import Consultation04 from "./consultations/Consultation04/Consultation04"
 // import Consultation05 from "./consultations/Consultation05/Consultation05"
+// import Consultation06 from './consultations/Consultation06/Consultation06'
+
 
 
 function App() {
@@ -68,10 +67,10 @@ function App() {
           <Route path='/users' element={<Users />} />
           <Route path='/users/designer' element={<Designer />} />
           <Route path='/users/manager' element={<Manager />} />
-          <Route path='/clients/atos' element={<Atos />} />
-          <Route path='/clients/legrand' element={<Legrand />} />
-          <Route path='/clients/columbus' element={<Columbus />} />
           <Route path='/clients' element={<Clients />} />
+          {/*<Route path='/clients/amazon' element={<Amazon />} />*/}
+          {/*<Route path='/clients/facebook' element={<Facebook />} />*/}
+          {/*<Route path='/clients/google' element={<Google />} />*/}
           <Route path='/lesson18' element={<Lesson18 />} />
           {/* path='*' - специальный маршрут, который вызовет переданный компонент в
           том случае, если в маршрутах выше не будет найдено того маршрута,
