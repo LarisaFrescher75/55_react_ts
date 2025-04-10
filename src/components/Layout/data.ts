@@ -10,4 +10,5 @@ export const navLinksData: NavLinkObj[] = [
   { to: "/legrand", linkName: "Legrand" },
   { to: "/columbus", linkName: "Columbus" },
   { to: "/atos", linkName: "Atos" },
+  { to: "/homework18", linkName: "Homework18" }
 ];

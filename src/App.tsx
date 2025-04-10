@@ -14,6 +14,8 @@ import Clients from './pages/Clients/Clients'
 //import Facebook from './pages/Clients/components/Facebook/Facebook'
 //import Google from './pages/Clients/components/Google/Google'
 import Lesson18 from './lessons/Lesson18/Lesson18'
+import Homework18 from './homeworks/Homework18/Homework18'
+import Home from './pages/Home'
 
 //Lessons imports
 // импорт компонента Lesson06 по умолчанию
@@ -72,6 +74,7 @@ function App() {
           {/*<Route path='/clients/facebook' element={<Facebook />} />*/}
           {/*<Route path='/clients/google' element={<Google />} />*/}
           <Route path='/lesson18' element={<Lesson18 />} />
+          <Route path='/homework18' element={<Homework18 />} />
           {/* path='*' - специальный маршрут, который вызовет переданный компонент в
           том случае, если в маршрутах выше не будет найдено того маршрута,
           к которому обращается пользователь */}
